@@ -1,0 +1,17 @@
+import './index.css'
+
+const BlogItem = props => {
+  const {blogDetails} = props
+  const {title, description, publishedDate} = blogDetails
+
+  return (
+    <li className="blog-item">
+      <div className="blog-container">
+        <h1 className="heading">{title}</h1>
+        <p className="blog-publishedDate">{publishedDate}</p>
+      </div>
+      <p className="blog-description">{description}</p>
+    </li>
+  )
+}
+export default BlogItem
